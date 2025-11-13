@@ -1,1 +1,17 @@
-(function(){const p=document.getElementById('progress');function s(){const h=document.documentElement;const sc=(h.scrollTop)/(h.scrollHeight-h.clientHeight);p.style.width=(sc*100)+'%';}document.addEventListener('scroll',s,{passive:true});s();const y=document.getElementById('year');if(y) y.textContent=new Date().getFullYear();})();
+// script.js
+document.addEventListener("DOMContentLoaded", () => {
+  const yearEl = document.getElementById("year");
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  const progress = document.getElementById("progress");
+  if (!progress) return;
+
+  const onScroll = () => {
+    const h = document.documentElement;
+    const scrolled = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    progress.style.width = scrolled + "%";
+  };
+
+  window.addEventListener("scroll", onScroll);
+  onScroll();
+});
