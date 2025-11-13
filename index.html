@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>AERIQ — Coming Soon</title>
+<meta name='description' content='AERIQ: Premium athletic wear. Official launch coming soon.'>
+<meta property='og:title' content='AERIQ — Coming Soon'>
+<meta property='og:description' content='Luxury-performance athletic wear. Join @aeriqclub for updates.'>
+<link rel='icon' href='assets/favicon.svg'>
+<link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap' rel='stylesheet'>
+<link rel='stylesheet' href='styles.css'>
+</head>
+<body>
+<div class='progress' id='progress'></div>
+<header class='nav wrap'>
+  <div class='brand'>
+    <img src='assets/aeriq-logo.svg' alt='AERIQ' class='logo'/>
+    <span class='wordmark'>AERIQ</span>
+  </div>
+  <nav class='right'>
+    <a class='link' href='https://instagram.com/aeriqclub' target='_blank' rel='noopener'>@aeriqclub</a>
+    <a class='btn btn--light' href='tel:+919872157229'>+91 98721 57229</a>
+  </nav>
+</header>
+<main class='hero'>
+  <div class='bg'></div>
+  <div class='veil'></div>
+  <section class='hero__content wrap'>
+    <h1 class='title'>Coming Soon</h1>
+    <p class='subtitle'>Luxury in Motion — engineered to move you forward.</p>
+    <form id='notify' class='notify' action='#' method='POST' onsubmit='event.preventDefault(); alert("Thanks! We'll notify you.");'>
+      <input class='field' type='email' placeholder='Enter your email for early access' required/>
+      <button class='btn btn--light' type='submit'>Notify Me</button>
+    </form>
+    <div class='badges'><span>Born in India</span><span>Performance × Luxury</span><span>Follow <a href='https://instagram.com/aeriqclub' target='_blank' rel='noopener'>@aeriqclub</a></span></div>
+  </section>
+</main>
+<footer class='foot'>
+  <div class='wrap foot__grid'>
+    <div class='mini'><img src='assets/aeriq-logo.svg' class='logo'/><span class='wordmark'>AERIQ</span></div>
+    <ul class='links'>
+      <li><a href='https://instagram.com/aeriqclub' target='_blank' rel='noopener'>Instagram: @aeriqclub</a></li>
+      <li><a href='tel:+919872157229'>+91 98721 57229</a></li>
+      <li><a href='mailto:hello@aeriq.in'>hello@aeriq.in</a></li>
+    </ul>
+    <p class='muted'>© <span id='year'></span> AERIQ. All rights reserved.</p>
+  </div>
+</footer>
+<script src='script.js'></script>
+</body>
+</html>

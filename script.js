@@ -1,0 +1,1 @@
+(function(){const p=document.getElementById('progress');function s(){const h=document.documentElement;const sc=(h.scrollTop)/(h.scrollHeight-h.clientHeight);p.style.width=(sc*100)+'%';}document.addEventListener('scroll',s,{passive:true});s();const y=document.getElementById('year');if(y) y.textContent=new Date().getFullYear();})();

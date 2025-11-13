@@ -1,0 +1,22 @@
+:root{--bg:#161c2f;--ink:#ffffff;--muted:#cfd6e4;--border:rgba(255,255,255,.12);--accent:#ef4444;--panel:#1f2433}
+*{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--accent),#fff);width:0;z-index:99}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.25em}
+.logo{width:30px;height:30px}.wordmark{font-size:14px}
+.right{display:flex;align-items:center;gap:12px}.link{color:#cfd6e4}
+.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:10px 16px;border:1px solid transparent;font-weight:800}
+.btn--light{background:#fff;color:#000}
+.hero{position:relative;min-height:92vh;display:flex;align-items:center}
+.bg{position:absolute;inset:0;background:radial-gradient(80% 120% at 70% 20%, rgba(239,68,68,.2), transparent), url('assets/bg.svg') center/cover no-repeat, linear-gradient(180deg,#0e1324,#070a14)}
+.veil{position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,.15), rgba(0,0,0,.55))}
+.hero__content{position:relative;z-index:2;text-align:center}
+.title{font-size:48px;line-height:1.05;margin:0}@media(min-width:768px){.title{font-size:72px}}
+.subtitle{color:var(--muted);max-width:680px;margin:10px auto 14px}
+.notify{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:10px}
+.field{min-width:260px;padding:12px 14px;border-radius:12px;border:1px solid var(--border);background:#0b0b0b;color:#fff}
+.badges{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:14px;color:var(--muted);font-size:12px}
+.foot{border-top:1px solid var(--border);padding:18px 0;background:linear-gradient(180deg, rgba(255,255,255,.02), transparent)}
+.foot__grid{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.links{list-style:none;display:flex;gap:16px;margin:0;padding:0}.muted{color:#cfd6e4}
