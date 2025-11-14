@@ -63,3 +63,36 @@ body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-seri
 .card.wide{grid-column:auto}
 .foot-inner{flex-direction:column;align-items:flex-start}
 }
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 14px 16px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+  font-size: 15px;
+  border-radius: 6px;
+  outline: none;
+  font-family: system-ui, sans-serif;
+}
+
+.input-field::placeholder {
+  color: rgba(255,255,255,0.55);
+}
+
+.input-field:focus {
+  border-color: #fff;
+  background: rgba(255,255,255,0.10);
+}
+
+.contact-form button {
+  margin-top: 8px;
+}
+
