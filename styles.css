@@ -95,4 +95,27 @@ body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-seri
 .contact-form button {
   margin-top: 8px;
 }
+media (max-width: 600px) {
+  .topbar-inner {
+    padding: 10px 14px;
+  }
 
+  .brand-logo {
+    height: 36px;      /* Smaller, cleaner on iPhone width */
+  }
+
+  .nav {
+    gap: 14px;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+  }
+
+  .wrap {
+    padding: 0 16px;   /* Slightly tighter side padding */
+  }
+
+  .hero-content {
+    padding-top: 18vh;
+    padding-bottom: 14vh;
+  }
+}
